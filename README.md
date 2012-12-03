@@ -1,9 +1,10 @@
-# 喻波的工作环境
+# laiwei unix home
 
-## 第一次提交,待整理
+## fork from yubo, thanks
 
-    git clone git@github.com:yubo/home.git ~/.yubo
-    cd ~/.yubo && sh install.sh
+    git clone git@github.com:laiwei/unix_home.git ~/.laiwei_unix_home
+    cd ~/.laiwei_unix_home && sh install.sh
+
     vim
     :BundleInstall
     :q

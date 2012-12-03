@@ -1,5 +1,5 @@
 #!/bin/sh
-#git clone git@github.com:yubo/home.git ~/.yubo
+#git clone git@github.com:laiwei/unix_home.git ~/.laiwei_unix_home
 
 
 install_file()
@@ -15,7 +15,7 @@ install_file()
 	ln -s $src $des
 }
 
-install_file bin
+install_file .screenrc
 install_file .vimrc
 install_file .vim
 install_file .bash_profile

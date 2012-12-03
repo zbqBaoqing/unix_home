@@ -32,6 +32,7 @@ set encoding=utf-8
 set scrolloff=3
 set fenc=utf-8
 set foldnestmax=2
+
 " don't auto wrap long text
 "set formatoptions=mnoq
 " mbyte/list-header support when <gq>
@@ -60,7 +61,7 @@ set sidescroll=1 sidescrolloff=1
 set spelllang=en
 set splitright splitbelow
 set tabpagemax=50
-set tabstop=8 softtabstop=4 shiftwidth=4 expandtab
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 set tags=./tags;/,~/.vim/tags
 set thesaurus=~/.vim/tsr.txt
 set timeoutlen=500 ttimeoutlen=0
@@ -444,7 +445,16 @@ Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/Shougo/neocomplcache.git'
 
-
 filetype plugin indent on    " required!
 
+
+"key maps
+map <C-M> :tabnew<CR>
+map <C-N> :tabnext<CR>
+map <C-P> :tabpre<CR>
+
+nnoremap ,e :e <C-R>=expand('%:p:h') . '/'<CR> 
+nnoremap ,, :tabnew <C-R>=expand('%:p:h') . '/'<CR> 
+inoremap jj <Esc>
+nnoremap <C-L> :nohl<CR><C-L>
 

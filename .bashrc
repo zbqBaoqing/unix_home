@@ -11,4 +11,5 @@ fi
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 
-
+# git
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '

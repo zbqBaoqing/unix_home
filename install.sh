@@ -21,6 +21,7 @@ install_file .vim
 install_file .bash_profile
 install_file .bashrc
 install_file .dircolors
+install_file .git-completion.bash && echo "source ~/.git-completion.bash" >> ~/.bashrc
 
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 

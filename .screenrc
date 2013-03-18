@@ -6,3 +6,5 @@ hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u
 bind ' ' copy
 bind j next
 bind k prev
+
+shell -$SHELL

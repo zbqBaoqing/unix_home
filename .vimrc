@@ -458,3 +458,5 @@ nnoremap ,, :tabnew <C-R>=expand('%:p:h') . '/'<CR>
 inoremap jj <Esc>
 nnoremap <C-L> :nohl<CR><C-L>
 
+"tagbar
+nmap <F8> :TagbarToggle<CR>

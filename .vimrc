@@ -444,6 +444,7 @@ Bundle 'taglist.vim'
 Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/Shougo/neocomplcache.git'
+Bundle 'https://github.com/majutsushi/tagbar.git'
 
 filetype plugin indent on    " required!
 

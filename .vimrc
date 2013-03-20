@@ -46,8 +46,8 @@ map <C-X> :NERDTreeToggle<CR>
 
 "powerline
 set laststatus=2
-"let g:Powerline_symbols = 'fancy'
-let g:Powerline_symbols = 'unicode'
+let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'unicode'
 let g:showmarks_enable = 0
 let g:showmarks_include = "abcdefghijklmnopqrstuvwxyz".
                         \ "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

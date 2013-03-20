@@ -1,0 +1,9 @@
+[user]
+	name = laiwei
+	email = laiwei.ustc@gmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = No
+[core]
+	editor = vim

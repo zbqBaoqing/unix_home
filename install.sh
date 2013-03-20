@@ -22,6 +22,10 @@ install_file .bash_profile
 install_file .bashrc
 install_file .dircolors
 install_file .git-completion.bash && echo "source ~/.git-completion.bash" >> ~/.bashrc
+install_file .fonts
+install_file .gitignore
+install_file .gitconfig
+install_file .dircolors
 
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 

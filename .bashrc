@@ -16,3 +16,6 @@ export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 source ~/.git-completion.bash
 
 alias gocc="ssh root@localhost -p5001"
+source ~/.git-completion.bash
+source ~/.git-completion.bash
+source ~/.git-completion.bash

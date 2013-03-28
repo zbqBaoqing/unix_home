@@ -169,6 +169,9 @@ Bundle 'https://github.com/Lokaltog/vim-powerline'
 Bundle 'https://github.com/Shougo/neocomplcache.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
 
+"auto complete
+let g:neocomplcache_enable_at_startup=1
+
 "必须的设置：
 filetype on
 filetype plugin indent on

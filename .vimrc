@@ -1,4 +1,6 @@
 let mapleader = ','
+"不要兼容vi
+set nocompatible
 
 " Make command line two lines high"
 set ch=2
@@ -20,6 +22,7 @@ set ignorecase smartcase
 set number
 set autoindent
 set showmatch
+set noshowmode
 "设置光标高亮显示
 set cursorline
 set cursorcolumn
@@ -38,15 +41,6 @@ set go-=L
 
 "打开高亮
 syntax enable
-
-"不要兼容vi
-set nocompatible
-"colorscheme desert
-colorscheme solarized
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
 
 set fdm=indent
 "key maps
@@ -118,14 +112,20 @@ let g:showmarks_hlline_other = 1
 "tab键显示待选项
 set wildmenu
 
+
 set t_Co=256
-"使用color solarized
-colorscheme solarized
-let g:solarized_menu = 0
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
+colorscheme pablo
+"colorscheme desert
+"colorscheme solarized
+"let g:solarized_termtrans=1
+"let g:solarized_termcolors=256
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
+"if has('gui_running')
+"     set background=light
+"else
+"     set background=dark
+"endif
 
 "将-连接符也设置为单词
 set isk+=-

@@ -9,3 +9,4 @@ bind k prev
 
 # fix screen not source .bash_profile 
 shell -$SHELL
+screen bash

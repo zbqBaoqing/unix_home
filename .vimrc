@@ -23,9 +23,6 @@ set number
 set autoindent
 set showmatch
 set noshowmode
-"设置光标高亮显示
-set cursorline
-set cursorcolumn
 set ttyfast
 set ruler
 
@@ -116,6 +113,10 @@ set wildmenu
 set t_Co=256
 colorscheme pablo
 "colorscheme desert
+"设置光标高亮显示
+set cursorline    "same as set cul
+"set cursorcolumn  "same as set cuc
+hi CursorLine term=bold cterm=bold guibg=Grey40
 "colorscheme solarized
 "let g:solarized_termtrans=1
 "let g:solarized_termcolors=256

@@ -115,8 +115,11 @@ colorscheme pablo
 "colorscheme desert
 "设置光标高亮显示
 set cursorline    "same as set cul
-"set cursorcolumn  "same as set cuc
-hi CursorLine term=bold cterm=bold guibg=Grey40
+set cursorcolumn  "same as set cuc
+hi CursorLine term=bold cterm=bold guibg=0 ctermbg=235
+hi CursorColumn term=bold cterm=bold guibg=0 ctermbg=235
+"toggle hi of cuc and cul
+nnoremap H :set cursorline! cursorcolumn!<CR>
 "colorscheme solarized
 "let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
@@ -141,7 +144,7 @@ if has("autocmd")
 endif
 
 
-"vim 插件管理 
+"vim 插件管理
 "git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 filetype off        " required!
 set rtp+=~/.vim/bundle/vundle/

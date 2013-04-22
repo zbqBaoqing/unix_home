@@ -55,7 +55,7 @@ nnoremap <C-H> :set hls<CR><C-L>
 nmap <leader>t :TagbarToggle<CR>
 
 "ctags
-set tags=./.git/tags,./tags,~/.vim/tags;
+set tags=./.git/tags;./tags;~/.vim/tags;
 set autochdir
 
 "屏蔽掉讨厌的F1键
@@ -136,6 +136,8 @@ set isk+=-
 
 "自动载入配置文件不需要重启
 autocmd! bufwritepost _vimrc source %
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 "行号自动跳转
 if has("autocmd")

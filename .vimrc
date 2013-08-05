@@ -17,7 +17,7 @@ set scrolloff=3
 set foldnestmax=2
 
 set hlsearch incsearch
-set ignorecase smartcase
+"set ignorecase smartcase
 
 set number
 set autoindent
@@ -55,8 +55,9 @@ nnoremap <C-H> :set hls<CR><C-L>
 nmap <leader>t :TagbarToggle<CR>
 
 "ctags
-set tags=./.git/tags;./tags;~/.vim/tags;
-set autochdir
+"set tags=./.git/tags;./tags;~/.vim/tags;
+set tags=./ctags;~/.vim/ctags;
+"set autochdir
 
 "屏蔽掉讨厌的F1键
 inoremap <F1> <ESC>
@@ -135,7 +136,7 @@ nnoremap H :set cursorline! cursorcolumn!<CR>
 set isk+=-
 
 "自动载入配置文件不需要重启
-autocmd! bufwritepost _vimrc source %
+"autocmd! bufwritepost _vimrc source %
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 

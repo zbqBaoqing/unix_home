@@ -10,6 +10,7 @@ fi
 # go
 export GOROOT=$HOME/.go
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/opt/boxen/homebrew/bin
 
 # git
 export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '

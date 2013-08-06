@@ -91,7 +91,7 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeWinPos='left'
 let NERDTreeWinSize=31
 map <C-C> :NERDTreeFind<CR>
-map <C-X> :NERDTreeToggle<CR>
+"map <C-X> :NERDTreeToggle<CR>
 
 "powerline
 set laststatus=2
@@ -175,6 +175,7 @@ Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline'
 Bundle 'https://github.com/Shougo/neocomplcache.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
+Bundle 'Blackrush/vim-gocode'
 
 "auto complete
 let g:neocomplcache_enable_at_startup=1
@@ -182,4 +183,6 @@ let g:neocomplcache_enable_at_startup=1
 "必须的设置：
 filetype on
 filetype plugin indent on
+filetype plugin on
 
+syntax on

@@ -27,7 +27,7 @@ install_file .gitignore
 install_file .gitconfig
 install_file .dircolors
 
-git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 
 if [ -d "$GOROOT" ]; then

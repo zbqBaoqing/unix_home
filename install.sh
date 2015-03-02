@@ -17,6 +17,7 @@ install_file()
 
 install_file .screenrc
 install_file .vimrc
+install_file .ssh/config
 install_file .vim
 install_file .bash_profile
 install_file .bashrc

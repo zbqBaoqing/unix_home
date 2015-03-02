@@ -1,10 +1,9 @@
-# laiwei unix home
+# GaoJiasheng  Unix Home
 
-## fork from yubo, thanks
+## fork from laiwei & yubo ， thanks
 ## thanks http://beiyuu.com/git-vim-tutorial/ too
 
-    git clone git@github.com:laiwei/unix_home.git ~/.laiwei_unix_home
-    cd ~/.laiwei_unix_home && sh install.sh
+    cd ~/unix_home && sh install.sh
 
     vim
     :BundleInstall

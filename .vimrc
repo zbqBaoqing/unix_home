@@ -91,7 +91,44 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeWinPos='left'
 let NERDTreeWinSize=31
 map <C-C> :NERDTreeFind<CR>
-"map <C-X> :NERDTreeToggle<CR>
+map <C-C> :NERDTreeToggle<CR>
+
+"设置taglist
+let Tlist_Show_One_File=1 "只显示当前文件的tag
+let Tlist_Exit_OnlyWindow=1 "如果taglist窗口是最后一个窗口则退出vim
+let Tlist_Use_Right_Window=1 "右侧现实taglist
+let Tlist_GainFocus_On_ToggleOpen=1 "自动聚焦到taglist
+map <C-X> :TlistToggle<CR>
+
+"设置gocode
+map <C-M> :TagbarToggle<CR>
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+    \ }
 
 "powerline
 set laststatus=2
@@ -175,6 +212,7 @@ Bundle 'OmniCppComplete'
 Bundle 'https://github.com/Lokaltog/vim-powerline'
 Bundle 'https://github.com/Shougo/neocomplcache.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
+Bundle 'https://github.com/fatih/vim-go'
 Bundle 'Blackrush/vim-gocode'
 
 "auto complete

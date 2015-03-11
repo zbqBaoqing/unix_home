@@ -41,7 +41,7 @@ syntax enable
 
 set fdm=indent
 "key maps
-map <C-M> :tabnew<CR>
+map <C-T> :tabnew<CR>
 map <C-N> :tabnext<CR>
 map <C-P> :tabpre<CR>
 

@@ -14,3 +14,5 @@ export gotest=$HOME/work/gopath/src/gotest
 #一些命令的配置
 alias dev="ssh root@zc-op-shengshengdev00.bj"
 alias relay="ssh gaojiasheng@relay.xiaomi.com"
+
+alias anotools="cd /Users/gavin/work/mi-bash/bin/ && ./mi-bash -n"

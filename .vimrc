@@ -39,7 +39,7 @@ set go-=L
 "打开高亮
 syntax enable
 
-set fdm=indent
+set fdm=manual
 "key maps
 map <C-T> :tabnew<CR>
 map <C-N> :tabnext<CR>
@@ -224,3 +224,6 @@ filetype plugin indent on
 filetype plugin on
 
 syntax on
+
+
+set mouse=a

@@ -10,9 +10,12 @@ export norns=$HOME/work/gopath/src/norns
 export xpharos=$HOME/work/gopath/src/xpharos
 export blog=$HOME/work/blog
 export gotest=$HOME/work/gopath/src/gotest
+export anomail=$HOME/work/gopath/src/github.com/gaojiasheng/anomail
+export work=$HOME/work/
+export xbox=$HOME/work/service-tree/
 
 #一些命令的配置
 alias dev="ssh root@zc-op-shengshengdev00.bj"
 alias relay="ssh gaojiasheng@relay.xiaomi.com"
-
 alias anotools="cd /Users/gavin/work/mi-bash/bin/ && ./mi-bash -n"
+

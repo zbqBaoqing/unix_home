@@ -149,7 +149,7 @@ set wildmenu
 
 
 set t_Co=256
-colorscheme pablo
+"colorscheme pablo
 "colorscheme desert
 "设置光标高亮显示
 set cursorline    "same as set cul
@@ -158,16 +158,18 @@ hi CursorLine term=bold cterm=bold guibg=0 ctermbg=235
 hi CursorColumn term=bold cterm=bold guibg=0 ctermbg=235
 "toggle hi of cuc and cul
 nnoremap H :set cursorline! cursorcolumn!<CR>
-"colorscheme solarized
-"let g:solarized_termtrans=1
-"let g:solarized_termcolors=256
-"let g:solarized_contrast="high"
-"let g:solarized_visibility="high"
-"if has('gui_running')
-"     set background=light
-"else
-"     set background=dark
-"endif
+
+"solarized相关设置
+colorscheme solarized
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+if has('gui_running')
+     set background=light
+else
+     set background=dark
+endif
 
 "将-连接符也设置为单词
 set isk+=-

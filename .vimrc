@@ -149,27 +149,46 @@ set wildmenu
 
 
 set t_Co=256
-"colorscheme pablo
-"colorscheme desert
 "设置光标高亮显示
 set cursorline    "same as set cul
 set cursorcolumn  "same as set cuc
-hi CursorLine term=bold cterm=bold guibg=0 ctermbg=235
-hi CursorColumn term=bold cterm=bold guibg=0 ctermbg=235
+hi CursorLine term=bold cterm=bold "guibg=0 ctermbg=235
+hi CursorColumn term=bold cterm=bold "guibg=0 ctermbg=235
 "toggle hi of cuc and cul
 nnoremap H :set cursorline! cursorcolumn!<CR>
 
-"solarized相关设置
-colorscheme solarized
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
+"""""""""""""""""""""""""""""""""""COLOR SCHEMA"""""""""""""""""""""""
+"colorscheme pablo
+"colorscheme desert
+"colorscheme candy
+colorscheme vividchalk
+"colorscheme perfectdark
+
+"""""""molokai相关设置
+"colorscheme molokai
+"let g:molokai_original = 1
+"let g:rehash256 = 1
+""""""""""""""""""""""
+
+"""""""solarized相关设置
+"colorscheme solarized
+"let g:solarized_termtrans=1
+"let g:solarized_termcolors=256
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
+"""""""""""""""""""""""
+
 if has('gui_running')
-     set background=light
+     set background=dark
+     set transparency=0
+     "set lines=60
+     "set columns=190
+     set guifont=Monaco:h15
+     set t_Co=256
 else
      set background=dark
 endif
+"""""""""""""""""""""""""""""""""""COLOR SCHEMA"""""""""""""""""""""""
 
 "将-连接符也设置为单词
 set isk+=-

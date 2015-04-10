@@ -13,6 +13,8 @@ export gotest=$HOME/work/gopath/src/gotest
 export anomail=$HOME/work/gopath/src/github.com/gaojiasheng/anomail
 export work=$HOME/work/
 export xbox=$HOME/work/service-tree/
+export dt=$HOME/work/apue-practice/data_struct/
+export fe=$HOME/work/norns-fe/
 
 #一些命令的配置
 alias dev="ssh root@zc-op-shengshengdev00.bj"

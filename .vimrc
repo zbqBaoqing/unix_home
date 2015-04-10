@@ -161,8 +161,9 @@ nnoremap H :set cursorline! cursorcolumn!<CR>
 "colorscheme pablo
 "colorscheme desert
 "colorscheme candy
-colorscheme vividchalk
+"colorscheme vividchalk
 "colorscheme perfectdark
+colorscheme Dracula
 
 """""""molokai相关设置
 "colorscheme molokai
@@ -180,7 +181,7 @@ colorscheme vividchalk
 
 if has('gui_running')
      set background=dark
-     set transparency=0
+     set transparency=5
      "set lines=60
      "set columns=190
      set guifont=Monaco:h15

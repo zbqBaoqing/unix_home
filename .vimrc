@@ -249,3 +249,4 @@ syntax on
 
 
 set mouse=a
+syntax on

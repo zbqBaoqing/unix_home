@@ -8,3 +8,4 @@ if [ -f /etc/bashrc ]; then
 fi
 
 source ~/.myownrc
+source ~/.git-completion.bash

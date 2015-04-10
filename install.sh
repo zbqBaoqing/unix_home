@@ -29,6 +29,7 @@ install_file .fonts
 install_file .gitignore
 install_file .gitconfig
 install_file .dircolors
+install_file .bin
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 

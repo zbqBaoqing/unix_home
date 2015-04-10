@@ -1,0 +1,1 @@
+/Users/gavin/.tools/go/misc/vim/autoload/go/complete.vim

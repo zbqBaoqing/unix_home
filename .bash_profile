@@ -12,7 +12,7 @@ PATH=$PATH:$HOME/bin
 export PATH
 
 export LANG="zh_CN.UTF-8"
-export PS1='[${debian_chroot:+($debian_chroot)}\u@\h:\w]\$'
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[0;32;40m\]\u@\[\033[0;33;40m\]\t\[\033[00m\]\[\033[00m\]:\[\033[0;35;40m\]\w\[\033[00m\]\[\033[01;31;40m\]\$\[\033[00m\] '
 
 alias vi='vim'
 alias ff='find . | xargs grep -n --color '

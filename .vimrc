@@ -1,4 +1,3 @@
-let mapleader = ','
 "不要兼容vi
 set nocompatible
 
@@ -41,7 +40,7 @@ syntax enable
 
 set fdm=manual
 "key maps
-map <C-T> :tabnew<CR>
+"map <C-T> :tabnew<CR>
 map <C-N> :tabnext<CR>
 map <C-P> :tabpre<CR>
 
@@ -179,6 +178,58 @@ colorscheme Dracula
 "let g:solarized_visibility="high"
 """""""""""""""""""""""
 
+
+"进行版权声明的设置
+"添加或更新头
+map <F4> :call TitleDet()<cr>'s
+function AddTitle()
+    call append(0,'"""')
+    call append(1,"   ********************************************************")
+    call append(2,"   * Author: zhang baoqing                                *")
+    call append(3,"   *                                                      *")
+    call append(4,"   * Mail :  zhangbaoqing@xiaomi.com                      *")
+    call append(5,"   *                                                      *")
+    call append(6,"   * Last modified: ".strftime("%Y-%m-%d %H:%M")."                      *")
+    call append(7,"   *                                                      *")
+    call append(8,"   * Filename: ".expand("%:t")."                                       *")
+    call append(9,"   *                                                      *")
+    call append(10,"   ********************************************************")
+    call append(11,'"""')
+    echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
+endf
+"更新最近修改时间和文件名
+function UpdateTitle()
+    normal m'
+    execute '/# *Last modified:/s@:.*$@\=strftime(":\t%Y-%m-%d %H:%M")@'
+    normal ''
+    normal mk
+    execute '/# *Filename:/s@:.*$@\=":\t\t".expand("%:t")@'
+    execute "noh"
+    normal 'k
+    echohl WarningMsg | echo "Successful in updating the copy right." | echohl None
+endfunction
+"判断前10行代码里面，是否有Last modified这个单词，
+"如果没有的话，代表没有添加过作者信息，需要新添加；
+"如果有的话，那么只需要更新即可
+function TitleDet()
+    let n=1
+    "默认为添加
+    while n < 10
+        let line = getline(n)
+        if line =~ '^\#\s*\S*Last\smodified:\S*.*$'
+            call UpdateTitle()
+            return
+        endif
+        let n = n + 1
+    endwhile
+    call AddTitle()
+endfunction
+
+
+
+"禁止pyFlaks使用QuickFix，这样在按下<F7>时会调用flake8
+let g:pyflakes_use_quickf=0
+
 if has('gui_running')
      set background=dark
      set transparency=5
@@ -204,6 +255,8 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+
+
 
 
 "vim 插件管理
@@ -236,6 +289,8 @@ Bundle 'https://github.com/Shougo/neocomplcache.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
 Bundle 'https://github.com/fatih/vim-go'
 Bundle 'Blackrush/vim-gocode'
+"python plugin
+Bundle 'https://github.com/nvie/vim-flake8'
 
 "auto complete
 let g:neocomplcache_enable_at_startup=1

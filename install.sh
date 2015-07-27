@@ -22,6 +22,7 @@ install_file .ssh/config
 install_file .zshrc
 install_file .vim
 install_file .bash_profile
+install_file .tmux.conf
 install_file .bashrc
 install_file .dircolors
 install_file .git-completion.bash && echo "source ~/.git-completion.bash" >> ~/.bashrc

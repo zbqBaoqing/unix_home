@@ -1,6 +1,6 @@
-# GaoJiasheng  Unix Home
+# zhangbaoqing Unix Home
 
-## fork from laiwei & yubo ， thanks
+## fork from laiwei & yubo & GaoJiasheng ， thanks
 ## thanks http://beiyuu.com/git-vim-tutorial/ too
 
     cd ~/unix_home && sh install.sh

@@ -34,6 +34,9 @@ install_file .bin
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
+hash yum 2>/dev/null && sudo yum install -y ctags-etags
+hash apt-get 2>/dev/null && sudo apt-get install -y exuberant-ctags
+
 
 if [ -d "$GOROOT" ]; then
     mkdir -p $HOME/.vim/ftdetect

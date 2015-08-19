@@ -181,20 +181,21 @@ colorscheme Dracula
 
 "进行版权声明的设置
 "添加或更新头
-map <F4> :call TitleDet()<cr>'s
+map <F4> :call TitleDet()<cr>
 function AddTitle()
-    call append(0,'"""')
-    call append(1,"   ********************************************************")
-    call append(2,"   * Author: zhang baoqing                                *")
-    call append(3,"   *                                                      *")
-    call append(4,"   * Mail :  zhangbaoqing@xiaomi.com                      *")
-    call append(5,"   *                                                      *")
-    call append(6,"   * Last modified: ".strftime("%Y-%m-%d %H:%M")."                      *")
-    call append(7,"   *                                                      *")
-    call append(8,"   * Filename: ".expand("%:t")."                                       *")
-    call append(9,"   *                                                      *")
-    call append(10,"   ********************************************************")
-    call append(11,'"""')
+    call append(0,"# -*-coding:utf-8 -*-")
+    call append(1,'"""')
+    call append(2,"   ********************************************************")
+    call append(3,"   * Author: zhang baoqing                                *")
+    call append(4,"   *                                                      *")
+    call append(5,"   * Mail :  zhangbaoqing@xiaomi.com                      *")
+    call append(6,"   *                                                      *")
+    call append(7,"   * Last modified: ".strftime("%Y-%m-%d %H:%M")."                      *")
+    call append(8,"   *                                                      *")
+    call append(9,"   * Filename: ".expand("%:t")."                                      *")
+    call append(10,"   *                                                      *")
+    call append(11,"   ********************************************************")
+    call append(12,'"""')
     echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
 endf
 "更新最近修改时间和文件名
@@ -282,8 +283,8 @@ Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 Bundle 'snipMate'
 Bundle 'bufexplorer.zip'
-Bundle 'taglist.vim'
 Bundle 'OmniCppComplete'
+Bundle 'https://github.com/yegappan/taglist'
 Bundle 'https://github.com/Lokaltog/vim-powerline'
 Bundle 'https://github.com/Shougo/neocomplcache.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'

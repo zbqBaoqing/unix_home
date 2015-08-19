@@ -17,9 +17,13 @@ alias ff='find . | xargs grep -n --color '
 alias ffh='find . -name \*.h -type f| xargs grep -n --color '
 alias ffc='find . -name \*.c -o -name \*.cpp -type f| xargs grep -n --color '
 alias grep='grep --color '
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+#alias rm='rm -i'
+#alias cp='cp -i'
+#alias mv='mv -i'
+alias rm='trash-put'
+alias empty='trash-empty'
+alias list='trash-list'
+
 
 if [ `uname` == 'Darwin' ]
 then
@@ -33,3 +37,4 @@ else
     alias ll='ls -Fl --color '
 fi
 
+source ~/.git-completion.bash

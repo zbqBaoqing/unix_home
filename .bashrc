@@ -27,10 +27,12 @@ then
     alias la='ls -GFa'
     alias ll='ls -lGF'
     PATH=$PATH:/usr/local/homebrew/bin
+    chsh -s /bin/zsh
 else
     alias ls='ls -F --color '
     alias la='ls -Fa --color '
     alias ll='ls -Fl --color '
 fi
 
+source ~/.git-completion.bash
 source ~/.git-completion.bash

@@ -18,12 +18,12 @@ export fe=$HOME/work/norns-fe/
 
 #一些命令的配置
 alias tmuxsave="sh ~/bin/tmux-save-session.sh"
-alias dev="ssh root@zc-op-shengshengdev00.bj"
 alias relay="ssh zhangbaoqing@relay.xiaomi.com"
 alias anotools="cd /Users/gavin/work/mi-bash/bin/ && ./mi-bash -n"
-alias rm='trash-put'
 alias empty='trash-empty'
+alias rm='trash-put'
 alias list='trash-list'
+alias restore='restore-trash'
 alias tmux='tmux -2'
 alias tmuxnew='tmux new -s'
 alias tmuxatt='tmux attach -t'

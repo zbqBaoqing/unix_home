@@ -33,9 +33,11 @@ install_file .dircolors
 install_file .bin
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 hash yum 2>/dev/null && sudo yum install -y ctags-etags
 hash apt-get 2>/dev/null && sudo apt-get install -y exuberant-ctags
+hash brew 2>/dev/null && brew install ctags 
 
 
 if [ -d "$GOROOT" ]; then

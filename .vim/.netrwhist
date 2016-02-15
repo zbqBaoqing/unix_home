@@ -1,4 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/zhangbaoqing/work/xcache/managers'
-let g:netrw_dirhist_2='/Users/zhangbaoqing/work/xcache/managers/models/dbs'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/zhangbaoqing/work/tyr-fe'

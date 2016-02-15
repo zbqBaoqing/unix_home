@@ -8,5 +8,5 @@ bind j next
 bind k prev
 
 # fix screen not source .bash_profile 
-shell -$SHELL
+shell -$SHELL 
 screen bash

@@ -143,6 +143,19 @@ let g:showmarks_hlline_lower = 1
 let g:showmarks_hlline_upper = 1
 let g:showmarks_hlline_other = 1
 
+"go相关的配置
+let g:fencview_autodetect=1
+let g:go_disable_autoinstall = 0
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:godef_split=3
+au BufRead,BufNewFile *.go set filetype=go
+au FileType go nmap <Leader>s <Plug>(go-implements)
+
 "tab键显示待选项
 set wildmenu
 
@@ -162,12 +175,12 @@ nnoremap H :set cursorline! cursorcolumn!<CR>
 "colorscheme candy
 "colorscheme vividchalk
 "colorscheme perfectdark
-colorscheme Dracula
+"colorscheme Dracula
 
 """""""molokai相关设置
-"colorscheme molokai
-"let g:molokai_original = 1
-"let g:rehash256 = 1
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
 """"""""""""""""""""""
 
 """""""solarized相关设置
@@ -181,7 +194,7 @@ colorscheme Dracula
 
 "进行版权声明的设置
 "添加或更新头
-map <F4> :call TitleDet()<cr>
+map <F4> :call TitleDet(4)<cr>
 function AddTitle()
     call append(0,"# -*-coding:utf-8 -*-")
     call append(1,'"""')
@@ -193,9 +206,12 @@ function AddTitle()
     call append(7,"   * Create Time: ".strftime("%Y-%m-%d %H:%M")."                        *")
     call append(8,"   *                                                      *")
     call append(9,"   * Filename: ".expand("%:t"))
-    call append(10,"   *                                                      *")
-    call append(11,"   ********************************************************")
-    call append(12,'"""')
+    call append(10,"  *                                                      *")
+    call append(11,"  ********************************************************")
+    call append(12,"")
+    call append(13,"    功能说明:")
+    call append(13,"        ")
+    call append(15,'"""')
     echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
 endf
 "更新最近修改时间和文件名
@@ -212,7 +228,7 @@ endfunction
 "判断前10行代码里面，是否有Last modified这个单词，
 "如果没有的话，代表没有添加过作者信息，需要新添加；
 "如果有的话，那么只需要更新即可
-function TitleDet()
+function TitleDet(num)
     let n=1
     "默认为添加
     while n < 10
@@ -223,8 +239,31 @@ function TitleDet()
         endif
         let n = n + 1
     endwhile
-    call AddTitle()
+    if a:num == 4
+        call AddTitle()
+    elseif a:num == 5
+        call AddGoTitle()
+    endif
 endfunction
+map <F5> :call TitleDet(5)<cr>
+function AddGoTitle()
+    call append(0,"/*")
+    call append(1,"   ********************************************************")
+    call append(2,"   * Author: zhang baoqing                                *")
+    call append(3,"   *                                                      *")
+    call append(4,"   * Mail :  zhangbaoqing@xiaomi.com                      *")
+    call append(5,"   *                                                      *")
+    call append(6,"   * Create Time: ".strftime("%Y-%m-%d %H:%M")."                        *")
+    call append(7,"   *                                                      *")
+    call append(8,"   * Filename: ".expand("%:t"))
+    call append(9,"   *                                                      *")
+    call append(10,"   ********************************************************")
+    call append(11,'')
+    call append(12,'    功能说明:')
+    call append(13,'          ')
+    call append(14,'*/')
+    echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
+endf
 
 
 
@@ -257,8 +296,8 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-
-
+"自动格式化代码
+autocmd BufWritePre *.go :Fmt
 
 "vim 插件管理
 "git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -290,6 +329,7 @@ Bundle 'https://github.com/Shougo/neocomplcache.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
 Bundle 'https://github.com/fatih/vim-go'
 Bundle 'Blackrush/vim-gocode'
+Bundle 'dgryski/vim-godef'
 "python plugin
 Bundle 'https://github.com/nvie/vim-flake8'
 

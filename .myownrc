@@ -1,16 +1,12 @@
 # go配置
-export GOROOT=/usr/local/Cellar/go/1.5/libexec
+export GOROOT=/usr/local/go
 export GOPATH=$HOME/work/gopath
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
 #自己的一些环境变量
-export norns=$HOME/work/gopath/src/norns
-export xpharos=$HOME/work/gopath/src/xpharos
-export blog=$HOME/work/blog
-export gowork=$HOME/work/go
-export xbox=$HOME/work/service-tree/
-export dt=$HOME/work/apue-practice/data_struct/
-export fe=$HOME/work/norns-fe/
+
+export EDITOR=vi
+
 
 #一些命令的配置
 alias tmuxsave="sh ~/bin/tmux-save-session.sh"

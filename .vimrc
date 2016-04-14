@@ -312,7 +312,6 @@ Bundle 'gmarik/vundle'
 "Bundle 'vim-plugin-bar'
 "Bundle 'ctrlp.vim'
 "Bundle 'AutoClose'
-"Bundle 'FencView.vim'
 Bundle 'ZenCoding.vim'
 Bundle 'matchit.zip'
 Bundle 'ShowTrailingWhitespace'
@@ -330,11 +329,17 @@ Bundle 'https://github.com/majutsushi/tagbar.git'
 Bundle 'https://github.com/fatih/vim-go'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'dgryski/vim-godef'
+
+
+
 "python plugin
 Bundle 'https://github.com/nvie/vim-flake8'
 
 "auto complete
 let g:neocomplcache_enable_at_startup=1
+
+
+ autocmd filetype crontab setlocal nobackup nowritebackup
 
 "必须的设置：
 filetype on

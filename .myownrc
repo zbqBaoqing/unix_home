@@ -1,7 +1,7 @@
 # go配置
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/work/gopath
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 #自己的一些环境变量
 
@@ -12,9 +12,6 @@ export EDITOR=vi
 alias tmuxsave="sh ~/bin/tmux-save-session.sh"
 alias anotools="cd /Users/gavin/work/mi-bash/bin/ && ./mi-bash -n"
 alias relay='ssh zhangbaoqing@relay.xiaomi.com'
-alias empty='trash-empty'
-alias rm='trash-put'
-alias list='trash-list'
 alias restore='restore-trash'
 alias tmux='tmux -2'
 alias tmuxnew='tmux new -s'

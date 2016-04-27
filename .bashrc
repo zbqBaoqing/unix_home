@@ -34,5 +34,3 @@ else
     alias ll='ls -Fl --color '
 fi
 
-source ~/.git-completion.bash
-source ~/.git-completion.bash

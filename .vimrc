@@ -350,4 +350,5 @@ syntax on
 
 
 set mouse=a
+set mouse=v
 syntax on

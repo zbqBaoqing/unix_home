@@ -146,6 +146,7 @@ let g:showmarks_hlline_other = 1
 "go相关的配置
 let g:fencview_autodetect=1
 let g:go_disable_autoinstall = 0
+let g:neocomplete#enable_at_startup = 1
 let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -191,6 +192,9 @@ let g:rehash256 = 1
 "let g:solarized_visibility="high"
 """""""""""""""""""""""
 
+
+"markdown
+let g:vim_markdown_frontmatter=1
 
 "进行版权声明的设置
 "添加或更新头
@@ -311,7 +315,7 @@ Bundle 'gmarik/vundle'
 "Bundle 'vim-plugin-foo'
 "Bundle 'vim-plugin-bar'
 "Bundle 'ctrlp.vim'
-"Bundle 'AutoClose'
+Bundle 'vim-scripts/AutoClose'
 Bundle 'ZenCoding.vim'
 Bundle 'matchit.zip'
 Bundle 'ShowTrailingWhitespace'

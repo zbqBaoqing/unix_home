@@ -1,8 +1,5 @@
-"不要兼容vi
-set nocompatible
-
-" Make command line two lines high"
-set ch=2
+set nocompatible  "不要兼容vi
+set ch=2 " Make command line two lines high"
 set ts=4
 set expandtab
 set tabstop=4
@@ -29,14 +26,12 @@ set autoread
 set backspace=indent,eol,start
 
 
-"自动换行
-set wrap
+set wrap  "自动换行
 "去除左右两边的滚动条
 set go-=r
 set go-=L
 
-"打开高亮
-syntax enable
+syntax enable "打开高亮
 
 set fdm=manual
 "key maps
@@ -77,6 +72,8 @@ inoremap <c-e> <end>
 "esc的映射
 imap jj <esc>
 
+"apidoc模板
+nnoremap <buffer> ap :ApiDocTpl<CR>
 
 nnoremap Y y$
 
@@ -178,11 +175,11 @@ nnoremap H :set cursorline! cursorcolumn!<CR>
 "colorscheme perfectdark
 "colorscheme Dracula
 
-"""""""molokai相关设置
+""""""molokai相关设置
 colorscheme molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
-""""""""""""""""""""""
+"""""""""""""""""""""
 
 """""""solarized相关设置
 "colorscheme solarized
@@ -333,6 +330,8 @@ Bundle 'https://github.com/majutsushi/tagbar.git'
 Bundle 'https://github.com/fatih/vim-go'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'dgryski/vim-godef'
+Bundle 'zbqyexingkong/apidoc.vim'
+"Bundle 'rizzatti/dash.vim'
 
 
 

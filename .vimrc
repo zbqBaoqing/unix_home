@@ -1,4 +1,3 @@
-set nocompatible  "不要兼容vi
 set ch=2 " Make command line two lines high"
 set ts=4
 set expandtab
@@ -31,7 +30,6 @@ set wrap  "自动换行
 set go-=r
 set go-=L
 
-syntax enable "打开高亮
 
 set fdm=manual
 "key maps
@@ -266,8 +264,6 @@ function AddGoTitle()
     echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
 endf
 
-
-
 "禁止pyFlaks使用QuickFix，这样在按下<F7>时会调用flake8
 let g:pyflakes_use_quickf=0
 
@@ -312,7 +308,7 @@ Bundle 'gmarik/vundle'
 "Bundle 'vim-plugin-foo'
 "Bundle 'vim-plugin-bar'
 "Bundle 'ctrlp.vim'
-Bundle 'vim-scripts/AutoClose'
+"Bundle 'vim-scripts/AutoClose'
 Bundle 'ZenCoding.vim'
 Bundle 'matchit.zip'
 Bundle 'ShowTrailingWhitespace'

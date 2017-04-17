@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/zhangbaoqing/work/tyr-fe'
-let g:netrw_dirhist_2='/Users/zhangbaoqing/Downloads/super-agent/data/install/super-agent-monitor/current'
-let g:netrw_dirhist_3='/Users/zhangbaoqing/work/receive_mail/util'
-let g:netrw_dirhist_4='/Users/zhangbaoqing/work/gopath/src/testgin/log'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/zbq/.unix_home/.vim/bundle/dash.vim/autoload/dash'
+let g:netrw_dirhist_2='/Users/zbq/work/gopath/src/elb-web/utils/param'
+let g:netrw_dirhist_3='/Users/zbq/work/gopath/src/elb-web/doc'

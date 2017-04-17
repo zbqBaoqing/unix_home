@@ -12,3 +12,8 @@
 [alias]
 	log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[remote "review"]
+    url = ssh://zhangbaoqing@code.n.xiaomi.com:29418/falcon/falcon
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    fetch = +refs/notes/review:refs/notes/review
+    push = HEAD:refs/for/master

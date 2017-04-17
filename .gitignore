@@ -1,4 +1,4 @@
-.vim/bundle
+.myownrc .vim/bundle
 bin
 *.swp
 .DS_Store

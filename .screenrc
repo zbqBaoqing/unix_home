@@ -5,7 +5,7 @@ hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u
 # my key binding
 bind ' ' copy
 bind j next
-bind k prev
+bind p prev
 
 # fix screen not source .bash_profile 
 shell -$SHELL 

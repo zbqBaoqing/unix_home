@@ -10,8 +10,6 @@ export EDITOR=vi
 
 #一些命令的配置
 alias tmuxsave="sh ~/bin/tmux-save-session.sh"
-alias anotools="cd /Users/gavin/work/mi-bash/bin/ && ./mi-bash -n"
-alias relay='ssh zhangbaoqing@relay.xiaomi.com'
 alias restore='restore-trash'
 alias tmux='tmux -2'
 alias tmuxnew='tmux new -s'

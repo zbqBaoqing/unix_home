@@ -10,7 +10,7 @@ export EDITOR=vi
 
 #一些命令的配置
 alias tmuxsave="sh ~/bin/tmux-save-session.sh"
-alias restore='restore-trash'
+alias restore='trash'
 alias tmux='tmux -2'
 alias tmuxnew='tmux new -s'
 alias tmuxatt='tmux attach -t'

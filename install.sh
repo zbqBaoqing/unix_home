@@ -34,6 +34,8 @@ install_file .bin
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+pip install powerline-status
+
 
 hash yum 2>/dev/null && sudo yum install -y ctags-etags
 hash apt-get 2>/dev/null && sudo apt-get install -y exuberant-ctags
